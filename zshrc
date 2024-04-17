@@ -128,3 +128,11 @@ unset __conda_setup
 export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export PATH=$CUDA_HOME/bin:$PATH
+
+export ZZROOT=$HOME/app
+export PATH=$ZZROOT/bin:$PATH
+export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
+
+# export OPENSSL_ROOT_DIR=/opt/miniconda3/bin/openssl
+
+export PATH=$HOME/mypackage/setup/cmake-3.29.2-linux-x86_64/bin:$PATH
