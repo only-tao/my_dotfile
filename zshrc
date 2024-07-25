@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=( zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,7 +128,8 @@ unset __conda_setup
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+# 显示 Conda 环境名称
+# export PROMPT='%F{yellow}(%n)%F{green}%(!.%{3}.)%F{blue}%c%F{red}$(conda info --envs | grep -E "base|^active" | sed -n "/active/s/.* #\([^ ]*\) .*/[\1]/p")%f %# '
 export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export PATH=$CUDA_HOME/bin:$PATH
