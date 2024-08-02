@@ -135,9 +135,14 @@ export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export PATH=$CUDA_HOME/bin:$PATH
 
 export ZZROOT=$HOME/app
+export CNPY=$HOME/build
 export PATH=$ZZROOT/bin:$PATH
 export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
+
 
 # export OPENSSL_ROOT_DIR=/opt/miniconda3/bin/openssl
 
-export PATH=$HOME/mypackage/setup/cmake-3.29.2-linux-x86_64/bin:$PATH
+export PATH=$HOME/install_dir/cmake-3.28.3-linux-x86_64/bin:$PATH
+export PATH=$HOME/bin:$PATH
+export PATH=$HOME/build/bin:$PATH
