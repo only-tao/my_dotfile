@@ -139,7 +139,7 @@ export CNPY=$HOME/build
 export PATH=$ZZROOT/bin:$PATH
 export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
-
+export LD_LIBRARY_PATH=/home/dengt35/test_code:$LD_LIBRARY_PATH
 
 # export OPENSSL_ROOT_DIR=/opt/miniconda3/bin/openssl
 
