@@ -134,24 +134,28 @@ export CUDA_HOME=/usr/local/cuda
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 export PATH=$CUDA_HOME/bin:$PATH
 
-export ZZROOT=$HOME/app
-export CNPY=$HOME/build
-export TORCH_PATH=$HOME/build/libtorch
+# export ZZROOT=$HOME/app
+# export CNPY=$HOME/build
+# export TORCH_PATH=$HOME/build/libtorch
 
-export PATH=$ZZROOT/bin:$PATH
-export PATH=$CNPY/bin:$PATH
-export PATH=$TORCH_PATH/bin:$PATH
+# export PATH=$ZZROOT/bin:$PATH
+# export PATH=$CNPY/bin:$PATH
+# export PATH=$TORCH_PATH/bin:$PATH #???need it?
 
-export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/home/dengt35/test_code:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/home/dengt35/test_code:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/dengt35/Code/util-self/build:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=/home/dengt35/Code/util-self:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/home/dengt35/.conda/envs/pdflow/lib/
-export LD_LIBRARY_PATH=/home/dengt35/.conda/envs/pdflow/lib/python3.8/site-packages/torch/lib:$LD_LIBRARY_PATH
+
+# export LD_LIBRARY_PATH=/home/dengt35/.conda/envs/pdflow/lib/
+# export LD_LIBRARY_PATH=/home/dengt35/.conda/envs/pdflow/lib/python3.8/site-packages/torch/lib:$LD_LIBRARY_PATH
 # export OPENSSL_ROOT_DIR=/opt/miniconda3/bin/openssl
 
 export PATH=$HOME/install_dir/cmake-3.28.3-linux-x86_64/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/build/bin:$PATH
+
+export PYTHONPATH=$PYTHONPATH:/home/dengt35/Code/util-self/build_density/build
+# echo "Loaded .zshrc"
