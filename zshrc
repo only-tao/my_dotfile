@@ -136,15 +136,15 @@ export PATH=$CUDA_HOME/bin:$PATH
 
 # export ZZROOT=$HOME/app
 # export CNPY=$HOME/build
-# export TORCH_PATH=$HOME/build/libtorch
-
+# export TORCH_PATH=$HOME/build/torch_source/pytorch/torch
+export TORCH_PATH=$HOME/.conda/envs/pdflow/lib/python3.8/site-packages/torch
 # export PATH=$ZZROOT/bin:$PATH
 # export PATH=$CNPY/bin:$PATH
-# export PATH=$TORCH_PATH/bin:$PATH #???need it?
+export PATH=$TORCH_PATH/bin:$PATH #???need it?
 
 # export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
-# export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=/home/dengt35/test_code:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/dengt35/Code/util-self/build:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=/home/dengt35/Code/util-self:$LD_LIBRARY_PATH
