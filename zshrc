@@ -137,16 +137,16 @@ export PATH=$CUDA_HOME/bin:$PATH
 # export ZZROOT=$HOME/app
 # export CNPY=$HOME/build
 # export TORCH_PATH=$HOME/build/torch_source/pytorch/torch
-export TORCH_PATH=$HOME/.conda/envs/pdflow/lib/python3.8/site-packages/torch
+# export TORCH_PATH=$HOME/.conda/envs/pdflow/lib/python3.8/site-packages/torch
 # export PATH=$ZZROOT/bin:$PATH
 # export PATH=$CNPY/bin:$PATH
-export PATH=$TORCH_PATH/bin:$PATH #???need it?
+# export PATH=$TORCH_PATH/bin:$PATH #???need it?
 
 # export LD_LIBRARY_PATH=$ZZROOT/lib:$ZZROOT/lib64:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=$CNPY/lib:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=$TORCH_PATH/lib:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=/home/dengt35/test_code:$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=/home/dengt35/Code/util-self/build:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/home/dengt35/Code/util-self/build:$LD_LIBRARY_PATH
 # export LD_LIBRARY_PATH=/home/dengt35/Code/util-self:$LD_LIBRARY_PATH
 
 # export LD_LIBRARY_PATH=/home/dengt35/.conda/envs/pdflow/lib/
@@ -158,4 +158,32 @@ export PATH=$HOME/bin:$PATH
 export PATH=$HOME/build/bin:$PATH
 
 export PYTHONPATH=$PYTHONPATH:/home/dengt35/Code/util-self/build_density/build
+export JAVA_HOME=/home/dengt35/install_dir/jdk-17.0.5+8/
+export PATH=$JAVA_HOME/bin:$PATH
+
+export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+export ANTHROPIC_AUTH_TOKEN=sk-9b07f46afb4d4e6680abd62824b0bfab
+export ANTHROPIC_MODEL=deepseek-v4-pro[1m]
+export ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro[1m]
+export ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro[1m]
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
+export CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
+export CLAUDE_CODE_EFFORT_LEVEL=max
+
 # echo "Loaded .zshrc"
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba shell init' !!
+export MAMBA_EXE='/home/dengt35/miniforge3/bin/mamba';
+export MAMBA_ROOT_PREFIX='/home/dengt35/miniforge3';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias mamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
